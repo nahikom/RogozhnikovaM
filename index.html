@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Пример сайта</h1>
-    <a href="files/index2.html" alt="Хотите в геншин?"><b>Форма</b></a>
+    <a href="files/index2.html"><b>Форма</b></a>
     <h2>Список гиперссылок</h2>
     <ol>
         <li>
@@ -16,7 +16,7 @@
             <a href="https://nahikom.github.io/RogozhnikovaM/">Ссылка на главную страницу сайта в протоколе https</a>
         </li>
         <li>
-            <a name="chap2"></a>
+            <a id="chap2"></a>
             <a href="ftp://files/project1.html">Ссылка на файл на сервере FTP без авторизации</a>
         </li>
         <li>
@@ -41,7 +41,7 @@
             <a href="https://i.pinimg.com/originals/8e/f6/d7/8ef6d77014d9920860633fb826e16510.gif" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
         </li>
         <li>
-            <noindex><a href="https://i.pinimg.com/564x/eb/b2/02/ebb202364ccb3bc93525ecf700251beb.jpg" rel="nofollow">Ссылка, запрещенная для индексации поисковиками</a></noindex>
+            <!--noindex--><a href="https://i.pinimg.com/564x/eb/b2/02/ebb202364ccb3bc93525ecf700251beb.jpg" rel="nofollow">Ссылка, запрещенная для индексации поисковиками</a><!--/noindex-->
         </li>
         <li>
             <p>
@@ -53,7 +53,7 @@
         </li>
         <li>
             <span>Ссылки из прямоугольных и круглых областей картинки</span>
-            <img src="files/4.jpg" usemap="#figuri">
+            <img src="files/4.jpg" usemap="#figuri" alt="">
             <map name="figuri">
                 <area shape="rect" coords="0,0,220,200" href="https://genshin-impact.fandom.com/ru/wiki/Хэйдзо" alt="Детектив">
                 <area shape="circle" coords="350,104,80" href="https://genshin-impact.fandom.com/ru/wiki/Венти" alt="Барбатос">
